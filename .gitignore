@@ -1,0 +1,12 @@
+.log
+.idea
+target/
+**/*.jar
+*.iml
+.DS_Store
+.project
+.classpath
+.settings/
+.vscode
+*.sublime-project
+
