@@ -1,0 +1,34 @@
+2020-08-17 01:07:44.604 ReadProperties:22 - INFO: Returning value: chrome of key: BROWSER
+2020-08-17 01:07:44.606 ReadProperties:22 - INFO: Returning value: src/test/resources/driver/chromedriver of key: CHROME_DRIVER
+2020-08-17 01:07:45.999 TestBaseHooks:22 - INFO: Driver is initialized with chrome
+2020-08-17 01:07:45.999 ReadProperties:22 - INFO: Returning value: http://www.saucedemo.com/ of key: APPLICATION_URL
+2020-08-17 01:07:47.114 ReadProperties:22 - INFO: Returning value: http://www.saucedemo.com/ of key: APPLICATION_URL
+2020-08-17 01:07:47.115 TestBaseHooks:22 - INFO: Application url: http://www.saucedemo.com/ is opened in browser
+2020-08-17 01:07:47.120 TestBaseHooks:22 - INFO: Implicit wait of 5 seconds are attached to the driver
+2020-08-17 01:07:47.262 BasePage:22 - INFO: Base Page Constructor is called from class: org.natwest.pages.LoginPage
+2020-08-17 01:07:47.275 BasePage:22 - INFO: org.natwest.pages.LoginPage web elements are initialized with Web Driver using Page Factory
+2020-08-17 01:07:47.400 BasePage:22 - INFO: Username: standard_user is written in username text box on login page
+2020-08-17 01:07:47.462 BasePage:22 - INFO: Password is written in password text box on login page
+2020-08-17 01:07:48.446 BasePage:22 - INFO: Password is written in password text box on login page
+2020-08-17 01:07:48.447 BasePage:22 - INFO: Base Page Constructor is called from class: org.natwest.pages.ProductsPage
+2020-08-17 01:07:48.448 BasePage:22 - INFO: org.natwest.pages.ProductsPage web elements are initialized with Web Driver using Page Factory
+2020-08-17 01:07:48.537 BasePage:22 - INFO: Products are sorted by price (high to low)
+2020-08-17 01:07:48.574 BasePage:22 - INFO: Add costliest product in cart
+2020-08-17 01:07:48.608 BasePage:22 - INFO: Add cheapest product in cart
+2020-08-17 01:07:48.808 BasePage:22 - INFO: Click on checkout trolley icon
+2020-08-17 01:07:48.810 BasePage:22 - INFO: Base Page Constructor is called from class: org.natwest.pages.YourCartPage
+2020-08-17 01:07:48.810 BasePage:22 - INFO: org.natwest.pages.YourCartPage web elements are initialized with Web Driver using Page Factory
+2020-08-17 01:07:48.811 BasePage:22 - INFO: Base Page Constructor is called from class: org.natwest.pages.YourInformationPage
+2020-08-17 01:07:48.811 BasePage:22 - INFO: org.natwest.pages.YourInformationPage web elements are initialized with Web Driver using Page Factory
+2020-08-17 01:07:49.005 BasePage:22 - INFO: Checkout button is clicked on Your Cart Page
+2020-08-17 01:07:49.074 BasePage:22 - INFO: First name is written in first name text box on Your Information page
+2020-08-17 01:07:49.115 BasePage:22 - INFO: Last name is written in last name text box on Your Information page
+2020-08-17 01:07:49.157 BasePage:22 - INFO: Zip code is written in zip code text box on Your Information page
+2020-08-17 01:07:49.341 BasePage:22 - INFO: Continue button is clicked on Your Information page
+2020-08-17 01:07:49.342 BasePage:22 - INFO: Base Page Constructor is called from class: org.natwest.pages.OverviewPage
+2020-08-17 01:07:49.342 BasePage:22 - INFO: org.natwest.pages.OverviewPage web elements are initialized with Web Driver using Page Factory
+2020-08-17 01:07:49.343 BasePage:22 - INFO: Base Page Constructor is called from class: org.natwest.pages.FinishPage
+2020-08-17 01:07:49.343 BasePage:22 - INFO: org.natwest.pages.FinishPage web elements are initialized with Web Driver using Page Factory
+2020-08-17 01:07:49.659 BasePage:22 - INFO: Finish Button is clicked on overview page
+2020-08-17 01:07:49.660 BasePage:22 - INFO: Returning text for order
+2020-08-17 01:07:49.773 TestBaseHooks:22 - INFO: Browser is closed
