@@ -41,14 +41,14 @@ failure test scenario after hook step is executed.
  
 ## How to run it 
 
-1. Git clone this repository
+1. Open terminal(MacOS/Linux) or command prompt(Windows) according to your operating system
 
-    `git clone`
-    
-2. Open terminal(MacOS/Linux) or command prompt(Windows) according to your operating system
+2. Traverse to the directory where you want to clone/download the project
 
-3. Transverse to the directory where you had cloned the project
+3. Clone [this](https://github.com/deepanshugoyal1989/tyl) repository using git on your system
 
+    `git clone https://github.com/deepanshugoyal1989/tyl.git`
+  
 4. Run mvn clean install
 
 5. Go to target/cucumber-reports
