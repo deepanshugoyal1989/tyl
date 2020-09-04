@@ -10,9 +10,9 @@ import org.openqa.selenium.support.FindBy;
  * using Page Factory and its functions represent actions that can be performed
  * on Your Information page web elements
  * @extends BasePage
- * @implements YourInformationPageOR
  */
-public class YourInformationPage extends BasePage implements YourInformationPageOR {
+public class YourInformationPage extends BasePage {
+
 
     // using Page Factory to initialize web elements
     @FindBy(xpath = YourInformationPageOR.FIRSTNAME_TEXT_BOX_XPATH)
@@ -32,7 +32,7 @@ public class YourInformationPage extends BasePage implements YourInformationPage
      * your information page web elements with web driver using Page Factory.
      * @param driver WebDriver instance
      */
-    public YourInformationPage(WebDriver driver) {
+     YourInformationPage(WebDriver driver) {
         super(driver);
     }
 

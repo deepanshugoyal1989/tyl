@@ -10,9 +10,9 @@ import org.openqa.selenium.support.FindBy;
  * using Page Factory and its functions represent actions that can be performed
  * on Products page web elements
  * @extends BasePage
- * @implements ProductsPageOR
  */
-public class ProductsPage extends BasePage implements ProductsPageOR {
+public class ProductsPage extends BasePage {
+
 
     // using Page Factory to initialize web elements
     @FindBy(xpath = ProductsPageOR.PRODUCT_SORT_DROPDOWN_XPATH)
@@ -32,7 +32,7 @@ public class ProductsPage extends BasePage implements ProductsPageOR {
      * products page web elements with web driver using Page Factory.
      * @param driver WebDriver instance
      */
-    public ProductsPage(WebDriver driver) {
+     ProductsPage(WebDriver driver) {
         super(driver);
 
     }

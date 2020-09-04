@@ -10,9 +10,9 @@ import org.openqa.selenium.support.FindBy;
  * using Page Factory and its functions represent actions that can be performed
  * on Your Cart page web elements
  * @extends BasePage
- * @implements YourCartPageOR
  */
-public class YourCartPage extends BasePage implements YourCartPageOR {
+public class YourCartPage extends BasePage {
+
 
     // using Page Factory to initialize web elements
     @FindBy(xpath = YourCartPageOR.CHECKOUT_BUTTON_XPATH)
@@ -24,7 +24,7 @@ public class YourCartPage extends BasePage implements YourCartPageOR {
      * your cart page web elements with web driver using Page Factory.
      * @param driver WebDriver instance
      */
-    public YourCartPage(WebDriver driver) {
+     YourCartPage(WebDriver driver) {
         super(driver);
 
     }

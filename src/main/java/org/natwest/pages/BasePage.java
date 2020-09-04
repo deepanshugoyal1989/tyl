@@ -1,6 +1,5 @@
 package org.natwest.pages;
 
-import org.junit.runner.RunWith;
 import org.natwest.utils.Constants;
 import org.natwest.utils.Log;
 import org.openqa.selenium.WebDriver;
@@ -11,8 +10,6 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.lang.reflect.Method;
 
 /**
  * It is base class which contains functions as actions that
@@ -31,7 +28,7 @@ public class BasePage {
      * Explicit wait is also initialized to be used later.
      * @param driver WebDriver Instance
      */
-    public BasePage(WebDriver driver) {
+     BasePage(WebDriver driver) {
         log.info("Base Page Constructor is called from class: "+ Thread.currentThread().getStackTrace()[2].getClassName());
         try{
             this.driver = driver;
@@ -51,7 +48,6 @@ public class BasePage {
 
     /**
      * Explicit wait for web element to be visible on web page
-     * wait is in seconds with value as {@value org.natwest.utils.Constants#TIMEOUT_IN_SECONDS}
      * @param webElement WebElement on which explicit wait is applied
      */
     protected void waitForElementToAppear(WebElement webElement) {

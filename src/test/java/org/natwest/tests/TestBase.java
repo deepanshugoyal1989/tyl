@@ -1,7 +1,5 @@
-package org.natwest.hooks;
+package org.natwest.tests;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.natwest.utils.Constants;
 import org.natwest.utils.Log;
@@ -19,16 +17,15 @@ import java.util.concurrent.TimeUnit;
  * WebDriver is initialized here with given browser.
  * @Before and @After Hooks are used to set up and tear up browser after each scenario.
  */
-public class TestBaseHooks {
+public class TestBase {
 
-    private static WebDriver driver;
-    private final Log log = new Log(TestBaseHooks.class);
+    private WebDriver driver;
+    private final Log log = new Log(TestBase.class);
 
     /**
      * Cucumber @Before hook is used to set web driver and open application url in browser
      */
-    @Before
-    public void setUp() {
+    public WebDriver setUp() {
 
         try{
             ReadProperties readProperties = new ReadProperties();
@@ -58,7 +55,7 @@ public class TestBaseHooks {
         } catch (Exception e){
             log.error("Error occured while initializing driver"+e.getMessage());
         }
-
+        return driver;
 
     }
 
@@ -67,7 +64,7 @@ public class TestBaseHooks {
      * It also checks if there is a failed scenario, attaches screenshot to it.
      * @param scenario To check status of scenario
      */
-    @After
+
     public void tearDown(Scenario scenario) {
         if(scenario.isFailed()) {
             byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
@@ -82,8 +79,8 @@ public class TestBaseHooks {
     /**
      * @return WebDriver instance
      */
-    public static WebDriver getDriver() {
-        return driver;
+    public WebDriver getDriver() {
+        return (driver==null)?setUp():driver;
     }
 
 }

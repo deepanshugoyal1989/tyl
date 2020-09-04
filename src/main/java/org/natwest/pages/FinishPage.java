@@ -10,9 +10,9 @@ import org.openqa.selenium.support.FindBy;
  * using Page Factory and its functions represent actions that can be performed
  * on finish page web elements
  * @extends BasePage
- * @implements FinishPageOR
  */
-public class FinishPage extends BasePage implements FinishPageOR {
+public class FinishPage extends BasePage {
+
 
     //It finds web element for message that confirms successful order using Page Factory.
     @FindBy(xpath = FinishPageOR.SUCCESSFUL_ORDER_MESSAGE_XPATH)
@@ -23,7 +23,7 @@ public class FinishPage extends BasePage implements FinishPageOR {
      * finish page web elements with web driver using Page Factory.
      * @param driver WebDriver instance
      */
-    public FinishPage(WebDriver driver) {
+     FinishPage(WebDriver driver) {
         super(driver);
     }
 

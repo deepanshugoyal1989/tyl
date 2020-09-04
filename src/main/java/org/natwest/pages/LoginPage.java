@@ -10,9 +10,9 @@ import org.openqa.selenium.support.FindBy;
  * using Page Factory and its functions represent actions that can be performed
  * on login page web elements
  * @extends BasePage
- * @implements LoginPageOR
  */
-public class LoginPage extends BasePage implements LoginPageOR {
+public class LoginPage extends BasePage {
+
 
     // using Page Factory to initialize web elements
     @FindBy(xpath = LoginPageOR.USERNAME_TEXT_BOX_XPATH)
@@ -29,7 +29,7 @@ public class LoginPage extends BasePage implements LoginPageOR {
      * login page web elements with web driver using Page Factory.
      * @param driver WebDriver instance
      */
-    public LoginPage(WebDriver driver){
+     LoginPage(WebDriver driver){
         super(driver);
 
     }

@@ -10,9 +10,8 @@ import org.openqa.selenium.support.FindBy;
  * using Page Factory and its functions represent actions that can be performed
  * on overview page web elements
  * @extends BasePage
- * @implements OverviewPageOR
  */
-public class OverviewPage extends BasePage implements OverviewPageOR{
+public class OverviewPage extends BasePage {
 
 
     // using Page Factory to initialize web elements
@@ -24,7 +23,7 @@ public class OverviewPage extends BasePage implements OverviewPageOR{
      * overview page web elements with web driver using Page Factory.
      * @param driver WebDriver instance
      */
-    public OverviewPage(WebDriver driver){
+     OverviewPage(WebDriver driver){
         super(driver);
 
     }
