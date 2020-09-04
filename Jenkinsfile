@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Build node"
+               mvn clean
             }
         }
         stage('Test') {
             steps {
-                echo "Test node"
+                mvn install
             }
         }
         stage('Deploy') {
